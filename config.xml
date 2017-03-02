@@ -6,6 +6,9 @@
 
 <name>Prueba</name>
 
+<gap:plugin name="cordova-plugin-whitelist" source="npm" />
+<allow-intent href="tel:*" />
+
 <description>
  Esto es una prueba
 </description>
