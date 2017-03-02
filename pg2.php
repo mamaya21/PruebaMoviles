@@ -14,11 +14,12 @@
 	?>
     	<div data-role="page" id="page2">
 	<div data-role="header">
-		<h1>Página dos</h1>
-        <h2> <a href="tel:+51989583945;postd=4">Llámando al RPC de VS</a></h2>  
+		<h1>Página dos</h1> 
 	</div>
 	<div data-role="content">	
-		Contenido		
+		<ul data-role="listview">
+			<li><a href="tel:+51989583945;postd=4">Llámando al RPC de VS</a></li>
+		</ul>	
 	</div>
 	<div data-role="footer">
 		<h4>Pie de página</h4>
