@@ -8,6 +8,7 @@
 
 <gap:plugin name="cordova-plugin-whitelist" source="npm" />
 <allow-intent href="tel:*" />
+<allow-intent href="sms:*" />
 
 <description>
  Esto es una prueba
