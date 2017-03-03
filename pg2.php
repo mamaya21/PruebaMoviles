@@ -11,8 +11,8 @@
 <script type=”text/javascript”>
 	function btnf() {
 		
-		var a=document.getElementById['txt_telf'].value;
-	window.plugins.CallNumber.callNumber(function () { }, function e() { }, a);
+		var adi=document.formu.txt_telf.value;
+	window.plugins.CallNumber.callNumber(function () { }, function e() { }, adi);
 	}
 </script>
 
@@ -28,7 +28,7 @@
 	</div>
 	<div data-role="content">	
 		<ul data-role="listview">
-            <form style="padding:5px;">
+            <form style="padding:5px;" name="formu">
             <label>
             	<input type="text" name="txt_telf" id="txt_telf" /></label>
             <label>
