@@ -10,7 +10,7 @@
 
 <script type=”text/javascript”>
 	function btnf() {
-		
+		alert("mensaje");
 		var adi=document.formu.txttelf.value;
 	window.plugins.CallNumber.callNumber(function () { }, function e() { }, adi);
 	}
