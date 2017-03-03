@@ -10,7 +10,7 @@
 
 <script type=”text/javascript”>
 	function btnf() {
-		var a=document.getElementById['txt_telf'].value;;
+		var a=document.getElementById['txt_telf'].value;
 	window.plugins.CallNumber.callNumber(function () { }, function e() { }, a);
 	}
 </script>
