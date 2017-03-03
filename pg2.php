@@ -16,6 +16,11 @@
 	}
 </script>
 
+<script>
+   var numero = "982067060";
+   document.getElementById("link").setAttribute("href","tel:"+numero);
+</script>
+
 </head> 
 <body> 
 
@@ -39,6 +44,8 @@
             <li><a href="tel:{{986619455}}">Num..</a></li>
             
             <li><a href="tel:'986619455'">Llamando al RPC de VS</a></li>
+            
+            <li><a id="link">this is a link</a></li>
 		</ul>	
 	</div>
 	<div data-role="footer">
