@@ -11,7 +11,7 @@
 <body> 
 
 <?php
-$var='986619455';
+
 	?>
     	<div data-role="page" id="page2">
 	<div data-role="header">
@@ -20,7 +20,7 @@ $var='986619455';
 	<div data-role="content">	
 		<ul data-role="listview">
             
-            <li><a href="tel:<?php echo $var;?>">Llamando al RPC de VS</a></li>
+            <li><a href="tel:<?php $var='986619455';echo $var;?>">Num..<?php echo $var;?></a></li>
             
             <li><a href="tel:'986619455'">Llamando al RPC de VS</a></li>
 		</ul>	
