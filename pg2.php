@@ -11,7 +11,7 @@
 <body> 
 
 <?php
-	$vari="986619455";
+	$num="986619455";
 	?>
     	<div data-role="page" id="page2">
 	<div data-role="header">
@@ -19,8 +19,10 @@
 	</div>
 	<div data-role="content">	
 		<ul data-role="listview">
-
-            <li><a href="tel:<?php print('986619455');?>">Num..<?php print($vari);?></a></li>
+			<?php
+			echo '<li><a href="tel:'.$num.'">'.$num.'</a></li>'; ?>
+            
+            <li><a href="tel:<?php print('986619455');?>">Num..<?php print('986619455');?></a></li>
             
             <li><a href="tel:'986619455'">Llamando al RPC de VS</a></li>
 		</ul>	
@@ -31,6 +33,7 @@
 </div>
 
     <?php
+
 ?>
 
 </body>
