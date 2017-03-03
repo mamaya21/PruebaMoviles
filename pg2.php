@@ -36,7 +36,7 @@
             </label>
             </form>
         
-            <li><a href="tel:<?php print('986619455');?>">Num..<?php print('986619455');?></a></li>
+            <li><a href="tel:{{986619455}}">Num..</a></li>
             
             <li><a href="tel:'986619455'">Llamando al RPC de VS</a></li>
 		</ul>	
