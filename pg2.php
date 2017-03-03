@@ -22,7 +22,7 @@ $var='986619455';
             
             <li><a href="tel:<?php echo $var;?>">Llamando al RPC de VS</a></li>
             
-            <li><a href="tel:986619455">Llamando al RPC de VS</a></li>
+            <li><a href="tel:'986619455'">Llamando al RPC de VS</a></li>
 		</ul>	
 	</div>
 	<div data-role="footer">
