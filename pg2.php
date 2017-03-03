@@ -11,7 +11,7 @@
 <script type=”text/javascript”>
 	function btnf() {
 		
-		var adi=document.formu.txt_telf.value;
+		var adi=document.formu.txttelf.value;
 	window.plugins.CallNumber.callNumber(function () { }, function e() { }, adi);
 	}
 </script>
@@ -28,9 +28,9 @@
 	</div>
 	<div data-role="content">	
 		<ul data-role="listview">
-            <form style="padding:5px;" name="formu">
+            <form style="padding:5px;" name="formu" id="formu">
             <label>
-            	<input type="text" name="txt_telf" id="txt_telf" /></label>
+            	<input type="text" name="txttelf" id="txttelf" /></label>
             <label>
             	<a href="#" onClick="btnf()">Llamando al RPC de VS</a>
             </label>
