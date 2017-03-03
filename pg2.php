@@ -7,6 +7,14 @@
 
 <script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
 <script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+
+<script type=”text/javascript”>
+	function btnf() {
+		var a=document.getElementById['txt_telf'].value;;
+	window.plugins.CallNumber.callNumber(function () { }, function e() { }, a);
+	}
+</script>
+
 </head> 
 <body> 
 
@@ -19,9 +27,14 @@
 	</div>
 	<div data-role="content">	
 		<ul data-role="listview">
-			<?php $cadena='<li><a href="tel: %s ">%s</a></li>';
-			echo sprintf ($cadena,$num,$num); ?>
-            
+            <form>
+            <label>
+            	<input type="text" name="txt_telf" id="txt_telf" /></label>
+            <label>
+            	<a href="#" onClick="btnf();">Llamando al RPC de VS</a>
+            </label>
+            </form>
+        
             <li><a href="tel:<?php print('986619455');?>">Num..<?php print('986619455');?></a></li>
             
             <li><a href="tel:'986619455'">Llamando al RPC de VS</a></li>
