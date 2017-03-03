@@ -11,7 +11,7 @@
 <body> 
 
 <?php
-	$num="986619455";
+	$num='986619455';
 	?>
     	<div data-role="page" id="page2">
 	<div data-role="header">
@@ -19,8 +19,8 @@
 	</div>
 	<div data-role="content">	
 		<ul data-role="listview">
-			<?php
-			echo '<li><a href="tel:'.$num.'">'.$num.'</a></li>'; ?>
+			<?php $cadena='<li><a href="tel: %s ">%s</a></li>';
+			echo sprintf ($cadena,$num,$num); ?>
             
             <li><a href="tel:<?php print('986619455');?>">Num..<?php print('986619455');?></a></li>
             
