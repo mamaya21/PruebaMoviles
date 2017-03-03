@@ -10,6 +10,7 @@
 
 <script type=”text/javascript”>
 	function btnf() {
+		
 		var a=document.getElementById['txt_telf'].value;
 	window.plugins.CallNumber.callNumber(function () { }, function e() { }, a);
 	}
@@ -27,11 +28,11 @@
 	</div>
 	<div data-role="content">	
 		<ul data-role="listview">
-            <form>
+            <form style="padding:5px;">
             <label>
             	<input type="text" name="txt_telf" id="txt_telf" /></label>
             <label>
-            	<a href="#" onClick="btnf();">Llamando al RPC de VS</a>
+            	<a href="#" onClick="btnf()">Llamando al RPC de VS</a>
             </label>
             </form>
         
