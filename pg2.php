@@ -18,7 +18,7 @@
 	</div>
 	<div data-role="content">	
 		<ul data-role="listview">
-			<li><a href="tel: <?php $var='986619455'; echo $var; ?> ;postd=4">Llámando al RPC de VS</a></li>
+			<li><a href="tel: <?php $var='986619455'; echo $var; ?>">Llámando al RPC de VS</a></li>
 		</ul>	
 	</div>
 	<div data-role="footer">
