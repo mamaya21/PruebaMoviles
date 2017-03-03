@@ -17,8 +17,8 @@
 </script>
 
 <script>
-   var numero = "982067060";
-   document.getElementById("link").setAttribute("href","tel:"+numero);
+   var numero_t = "982067060";
+   document.getElementById("link").setAttribute("href","tel:"+numero_t);
 </script>
 
 </head> 
@@ -41,7 +41,7 @@
             </label>
             </form>
         
-            <li><a href="tel:{{986619455}}">Num..</a></li>
+            <li><a href="tel:{{numero_t}}">Num..</a></li>
             
             <li><a href="tel:'986619455'">Llamando al RPC de VS</a></li>
             
