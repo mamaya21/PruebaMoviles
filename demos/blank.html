@@ -57,23 +57,10 @@
 		<div class="content-primary"> 
 			<form id="form1"> <input type="text" id="txtNum" name="txtNum">
             
-    <label for="fullname">Full name:</label>
-    <input type="text" name="fullname" id="fullname">
-
-    <label for="bday">Date of Birth:</label>
-    <input type="date" name="bday" id="bday">
-
-    <label for="email">E-mail:</label>
-    <input type="email" name="email" id="email" placeholder="Your email..">
+    
 
 </form>
-			<h2>Button to open custom HTML dialog</h2>
-			<p>note you are size limited to about 280px wide (unless you mess with the CSS directly.<br />
-			You can also later change the contents of fullHTML - simple change it to whatever you like:
-			<pre class="prettyprint">$('#simpleraw').data('simpledialog').options.fullHTML = "..."</pre>
-			then, call the refresh function:
-			<pre class="prettyprint">$('#simpleraw').simpledialog('refresh');</pre>
-			</p>
+			
 			<script type="text/javascript"> 
 				//var aaa=document.getElementsByName("txtNum").value;
 				var aaa=document.forms["form1"].elements[0].value;
@@ -90,27 +77,11 @@
 				});
 			</script>
 			<a href="#" id="simpleraw" data-role="button">Open Dialog</a>
-			<strong>HTML</strong><pre class="prettyprint">
-&lt;a href="#" id="dialoglink" data-role="button"&gt;Open Dialog&lt;/a&gt;</pre>
+			
 
-			<strong>jQuery</strong><pre class="prettyprint">
-$(document).delegate('#simpleraw', 'click', function() {
-    $(this).simpledialog({
-        'mode' : 'blank',
-        'prompt': false,
-        'forceInput': false,
-        'useModal':true,
-        'fullHTML' : 
-            "&lt;ul data-role='listview'&gt;&lt;li&gt;Some&lt;/li&gt;&lt;li&gt;List&lt;/li&gt;&lt;li&gt;Items&lt;/li&gt;&lt;/ul&gt;&lt;a rel='close' data-role='button' href='#' id='simpleclose'&gt;Close&lt;/a&gt;"
-    })
-});</pre>
 			</div>
 		
 	</div>
-	<div data-role="footer">
-		<div data-role="controlgroup" data-type="horizontal">
-			<a data-role="button" href="https://github.com/jtsage/jquery-mobile-simpledialog">GitHub Source</a><a data-role="button" rel='external' href="http://dev.jtsage.com/blog/">Blog</a><a data-role="button" href="mailto:jtsage+datebox@gmail.com">Contact</a><a data-role="button" href="http://jquerymobile.com/">jQueryMobile Homepage</a>
-		</div>
-	</div>
+	
 </div>
 </html>
