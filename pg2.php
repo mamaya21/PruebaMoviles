@@ -12,7 +12,8 @@
 	function btnf() {
 		var nume= $("#txttelf").val();
 		//alert("numero: "+nume);
-		$(this).html('<a href="tel:' + nume + '">' + nume + '</a>');
+		//$(this).html('<a href="tel:' + nume + '">' + nume + '</a>');
+		$(this).wrapInner('<a href="tel:'+nume +'"/>');
 	}
 
 </script>
@@ -50,7 +51,7 @@
             <li><a href="tel:'986619455'">Llamando al RPC de VS</a></li>
             
             <li><a id="link">this is a link</a></li>
-            <li class="phone">llamame</li>
+            <li><a href="#" onClick="btnf()">llamame</a></li>
 		</ul>	
 	</div>
     <div style="padding:5px;"><button onClick="btnf()">Llamar</button></div>
