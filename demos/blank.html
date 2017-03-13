@@ -55,7 +55,7 @@
 		</div><!--/content-primary-->	
 		
 		<div class="content-primary"> 
-			<form> <input type="text" id="txtNum" name="txtNum"/></form>
+			<form id="form1"> <input type="text" id="txtNum" name="txtNum"/></form>
 			<h2>Button to open custom HTML dialog</h2>
 			<p>note you are size limited to about 280px wide (unless you mess with the CSS directly.<br />
 			You can also later change the contents of fullHTML - simple change it to whatever you like:
@@ -64,7 +64,8 @@
 			<pre class="prettyprint">$('#simpleraw').simpledialog('refresh');</pre>
 			</p>
 			<script type="text/javascript"> 
-				var aaa=$("#txtNum").val();
+				//var aaa=document.getElementsByName("txtNum").value;
+				var aaa=document.forms["form1"].elements[0].value;
 				$(document).delegate('#simpleraw', 'click', function() {
 					$(this).simpledialog({
 						'mode' : 'blank',
