@@ -9,6 +9,7 @@
 <gap:plugin name="cordova-plugin-whitelist" source="npm" />
 <gap:plugin name="cordova-plugin-ble-central" source="npm" />
 <preference name="phonegap-version" value="cli-6.1.0" />
+<feature name="http://api.phonegap.com/1.0/network" />
 
 <allow-intent href="tel:*" />
 <allow-intent href="sms:*" />
@@ -20,6 +21,9 @@
 <author href="https://example.com" email="you@example.com">
 Marco
 </author>
+
+
+<access origin="*" onlyInBrowser="true" />
 
 <access origin="tel:*" launch-external="yes"/>
 <access origin="geo:*" launch-external="yes"/>
