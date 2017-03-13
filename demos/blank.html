@@ -3,7 +3,7 @@
 <head> 
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>jQueryMobile - SimpleDialog Demos</title>
+	<title>Prueba Marco</title>
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
 	<link type="text/css" href="http://dev.jtsage.com/cdn/simpledialog/latest/jquery.mobile.simpledialog.min.css" rel="stylesheet" /> 
 	<link type="text/css" href="http://dev.jtsage.com/jQM-DateBox/css/demos.css" rel="stylesheet" /> 
@@ -27,43 +27,20 @@
 <body>
 <div data-role="page" data-theme="c" id="main"> 
 	<div data-role="header"> 
-		<h1>jQueryMobile - SimpleDialog</h1>
+		<h1>Prueba</h1>
 	</div>
 	<div data-role="content" data-theme="c">
-		<div class="content-secondary"> 
-	
-			<div id="jqm-homeheader"> 
-				<h1 id="jqm-logo"><img src="/jQM-SimpleDialog/demos/jquery-logo-sd.png" alt="jQuery Mobile Framework :: SimpleDialog" /></h1> 
-				<p>A Popup Dialog Box for jQueryMobile</p> 
-				
-			</div> 
-	
-			<p class="intro">SimpleDialog aims to be a replacement for javascript dialog(), written for jQM.</p> 
-			
-			<ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="f"> 
-				<li data-role="list-divider">Overview</li> 
-				<li><a href="../index.html">Intro &amp; Features</a></li>
-				<li><a href="install.html">Download &amp; Use</a></li>
-				<li><a href="event.html">Methods and Events</a></li>
-				<li><a href="config.html">Full Options Matrix</a></li>
-				<li data-role="list-divider">Demos</li>
-				<li><a href="bool.html">Boolean / Button Mode</a></li>
-				<li><a href="string.html">String / Input Mode</a></li>
-				<li data-theme="a">Raw HTML Mode</li>
-			</ul> 
-			
-		</div><!--/content-primary-->	
 		
 		<div class="content-primary"> 
-			<form id="form1"> <input type="text" id="txtNum" name="txtNum">
-            
-    
+			<form id="form1"> 
+            <input type="text" id="txtNum" name="txtNum">
+            <input type="date" name="bday" id="bday">
 
 </form>
 			
 			<script type="text/javascript"> 
-				//var aaa=document.getElementsByName("txtNum").value;
-				var aaa=document.forms["form1"].elements[0].value;
+				var aaa=document.getElementsByName("txtNum").value;
+				//var aaa=document.forms["form1"].elements[0].value;
 				$(document).delegate('#simpleraw', 'click', function() {
 					$(this).simpledialog({
 						'mode' : 'blank',
