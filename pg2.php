@@ -8,17 +8,13 @@
 <script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
 <script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
 
-<script type=”text/javascript”>
+<script type="text/javascript">
 	function btnf() {
 		var nume= $("#txttelf").val();
 		alert("numero: "+nume);
 	}
 </script>
 
-<script>
-   var numero_t = "982067060";
-   document.getElementById("link").setAttribute("href","tel:"+numero_t);
-</script>
 
 </head> 
 <body> 
@@ -47,6 +43,7 @@
             <li><a id="link">this is a link</a></li>
 		</ul>	
 	</div>
+    <div style="padding:5px;"><button onClick="btnf()">Llamar</button></div>
 	<div data-role="footer">
 		<h4>Pie de página</h4>
 	</div>
