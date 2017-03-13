@@ -11,7 +11,8 @@
 <script type="text/javascript">
 	function btnf() {
 		var nume= $("#txttelf").val();
-		alert("numero: "+nume);
+		//alert("numero: "+nume);
+		$(this).html('<a href="tel:' + nume + '">' + nume + '</a>');
 	}
 </script>
 
