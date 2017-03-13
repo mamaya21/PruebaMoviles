@@ -20,22 +20,7 @@
  <script type="text/javascript" src="http://dev.jtsage.com/gpretty/prettify.js"></script>
 <link type="text/css" href="http://dev.jtsage.com/gpretty/prettify.css" rel="stylesheet" />
 
-<script type="text/javascript">
-	function btnf() {
-		var nume= $("#txttelf").val();
-		//alert("numero: "+nume);
-		//$(this).html('<a href="tel:' + nume + '">' + nume + '</a>');
-		$(this).wrapInner('<a href="tel:'+nume +'"/>');
-	}
 
-</script>
-
-<script type="text/javascript">
-	$('.phone').each(function(){
-		var numer= $("#txttelf").val();
-    $(this).wrapInner('<a href="tel:' + numer + '" />');
-});​
-</script>
 
 <script type="text/javascript">
 $(document).delegate('#simpleraw', 'click', function() {
