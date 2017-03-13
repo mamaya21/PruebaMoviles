@@ -25,6 +25,18 @@
 });​
 </script>
 
+<script type="text/javascript">
+$(document).delegate('#simpleraw', 'click', function() {
+    $(this).simpledialog({
+        'mode' : 'blank',
+        'prompt': false,
+        'forceInput': false,
+        'useModal':true,
+        'fullHTML' : 
+            "<ul data-role='listview'><li>Some</li><li>List</li><li>Items</li></ul><a rel='close' data-role='button' href='#' id='simpleclose'>Close</a>"
+    })
+});
+</script>
 
 </head> 
 <body> 
@@ -54,7 +66,7 @@
             <li><a href="#" onClick="btnf()">llamame</a></li>
 		</ul>	
 	</div>
-    <div style="padding:5px;"><button onClick="btnf()">Llamar</button></div>
+    <a href="#" id="dialoglink" data-role="button">Open Dialog</a>
 	<div data-role="footer">
 		<h4>Pie de página</h4>
 	</div>
