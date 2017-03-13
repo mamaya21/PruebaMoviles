@@ -34,64 +34,38 @@
 	
 			<div id="jqm-homeheader"> 
 				<h1 id="jqm-logo"><img src="/jQM-SimpleDialog/demos/jquery-logo-sd.png" alt="jQuery Mobile Framework :: SimpleDialog" /></h1> 
-				<p>A Popup Dialog Box for jQueryMobile</p> 
+				<p>A Popup Dialog Box for jQueryMobile 1.0</p> 
 				
 			</div> 
 	
 			<p class="intro">SimpleDialog aims to be a replacement for javascript dialog(), written for jQM.</p> 
 			
+			<p>Note: This plugin has largely been supserseeded by:</p>
+			<a href="demos2/" rel="external" data-role="button">SimpleDialog2</a>
+			
 			<ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="f"> 
 				<li data-role="list-divider">Overview</li> 
-				<li><a href="../index.html">Intro &amp; Features</a></li>
-				<li><a href="install.html">Download &amp; Use</a></li>
-				<li><a href="event.html">Methods and Events</a></li>
-				<li><a href="config.html">Full Options Matrix</a></li>
-				<li data-role="list-divider">Demos</li>
-				<li><a href="bool.html">Boolean / Button Mode</a></li>
-				<li><a href="string.html">String / Input Mode</a></li>
-				<li data-theme="a">Raw HTML Mode</li>
+				<li data-theme="a">Intro &amp; Features</li>
+				<li><a href="demos/install.html">Download &amp; Use</a></li>
+				<li><a href="demos/event.html">Methods and Events</a></li>
+				<li><a href="demos/config.html">Full Options Matrix</a></li>
+				<li data-role="list-divider">Demos</li> 
+				<li><a href="demos/bool.html">Boolean / Button Mode</a></li>
+				<li><a href="demos/string.html">String / Input Mode</a></li>
+				<li><a href="demos/blank.html">Raw HTML Mode</a></li>
 			</ul> 
 			
 		</div><!--/content-primary-->	
 		
 		<div class="content-primary"> 
 			
-			<h2>Button to open custom HTML dialog</h2>
-			<p>note you are size limited to about 280px wide (unless you mess with the CSS directly.<br />
-			You can also later change the contents of fullHTML - simple change it to whatever you like:
-			<pre class="prettyprint">$('#simpleraw').data('simpledialog').options.fullHTML = "..."</pre>
-			then, call the refresh function:
-			<pre class="prettyprint">$('#simpleraw').simpledialog('refresh');</pre>
-			</p>
-			<script type="text/javascript"> 
-				$(document).delegate('#simpleraw', 'click', function() {
-					$(this).simpledialog({
-						'mode' : 'blank',
-						'prompt': false,
-						'forceInput': false,
-						'cleanOnClose': true,
-						'useModal': true,
-						'fullHTML' : 
-							"<ul data-role='listview'><li>Some</li><li>List</li><li>Items</li></ul><a rel='close' data-role='button' href='#' id='simpleclose'>Close</a>"
-					})
-				});
-			</script>
-			<a href="#" id="simpleraw" data-role="button">Open Dialog</a>
-			<strong>HTML</strong><pre class="prettyprint">
-&lt;a href="#" id="dialoglink" data-role="button"&gt;Open Dialog&lt;/a&gt;</pre>
-
-			<strong>jQuery</strong><pre class="prettyprint">
-$(document).delegate('#simpleraw', 'click', function() {
-    $(this).simpledialog({
-        'mode' : 'blank',
-        'prompt': false,
-        'forceInput': false,
-        'useModal':true,
-        'fullHTML' : 
-            "&lt;ul data-role='listview'&gt;&lt;li&gt;Some&lt;/li&gt;&lt;li&gt;List&lt;/li&gt;&lt;li&gt;Items&lt;/li&gt;&lt;/ul&gt;&lt;a rel='close' data-role='button' href='#' id='simpleclose'&gt;Close&lt;/a&gt;"
-    })
-});</pre>
-			</div>
+			<ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="b">
+				<li data-role="list-divider">Features</li>
+				<li><h3>Two operation modes</h3><p><strong>Bool :</strong> A button only display where the user can choose one option<br /><strong>String :</strong> Dialog with a text input field to get user data.</p></li>
+				<li>Pops Up "over" the screen on larger devices, falls back to the full screen dialog of jQM on small displays</li>
+				<li>Modal and forced input displays available</li>
+			</ul>
+		</div> 
 		
 	</div>
 	<div data-role="footer">
