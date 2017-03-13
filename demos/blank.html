@@ -34,13 +34,20 @@
 		<div class="content-primary"> 
 			<form id="form1"> 
             <input type="text" id="txtNum" name="txtNum">
-            <input type="date" name="bday" id="bday">
+            <label for="fullname">Full name:</label>
+    <input type="text" name="fullname" id="fullname">
+
+    <label for="bday">Date of Birth:</label>
+    <input type="date" name="bday" id="bday">
+
+    <label for="email">E-mail:</label>
+    <input type="email" name="email" id="email" placeholder="Your email..">
 
 </form>
 			
 			<script type="text/javascript"> 
-				var aaa=document.getElementsByName("txtNum").value;
-				//var aaa=document.forms["form1"].elements[0].value;
+				//var aaa=document.getElementsByName("txtNum").value;
+				var aaa=document.forms["form1"].elements[0].value;
 				$(document).delegate('#simpleraw', 'click', function() {
 					$(this).simpledialog({
 						'mode' : 'blank',
