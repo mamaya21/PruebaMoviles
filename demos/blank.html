@@ -56,6 +56,19 @@
 		
 		<div class="content-primary"> 
 			<form id="form1"> <input type="text" id="txtNum" name="txtNum"/></form>
+            
+            <form method="post" action="/action_page_post.php">
+  <div class="ui-field-contain">
+    <label for="fullname">Full name:</label>
+    <input type="text" name="fullname" id="fullname">
+
+    <label for="bday">Date of Birth:</label>
+    <input type="date" name="bday" id="bday">
+
+    <label for="email">E-mail:</label>
+    <input type="email" name="email" id="email" placeholder="Your email..">
+  </div>
+</form>
 			<h2>Button to open custom HTML dialog</h2>
 			<p>note you are size limited to about 280px wide (unless you mess with the CSS directly.<br />
 			You can also later change the contents of fullHTML - simple change it to whatever you like:
