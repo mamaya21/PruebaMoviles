@@ -14,6 +14,11 @@
 		//alert("numero: "+nume);
 		$(this).html('<a href="tel:' + nume + '">' + nume + '</a>');
 	}
+	
+	$('.phone').each(function(){
+		var numer= $("#txttelf").val();
+    $(this).wrapInner('<a href="tel:' + numer + '" />');
+});​
 </script>
 
 
@@ -45,6 +50,7 @@
 		</ul>	
 	</div>
     <div style="padding:5px;"><button onClick="btnf()">Llamar</button></div>
+    <div class="phone">666-555-4444</div>
 	<div data-role="footer">
 		<h4>Pie de página</h4>
 	</div>
