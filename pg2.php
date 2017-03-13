@@ -8,20 +8,6 @@
 <script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
 <script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
-	<link type="text/css" href="http://dev.jtsage.com/cdn/simpledialog/latest/jquery.mobile.simpledialog.min.css" rel="stylesheet" /> 
-	<link type="text/css" href="http://dev.jtsage.com/jQM-DateBox/css/demos.css" rel="stylesheet" /> 
-	
-	<!-- NOTE: Script load order is significant! -->
-	
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
-	<script type="text/javascript" src="http://dev.jtsage.com/jquery.mousewheel.min.js"></script>
-	<script type="text/javascript" src="http://dev.jtsage.com/cdn/simpledialog/latest/jquery.mobile.simpledialog.min.js"></script>
-	
-	<script type="text/javascript" src="http://dev.jtsage.com/gpretty/prettify.js"></script>
-	<link type="text/css" href="http://dev.jtsage.com/gpretty/prettify.css" rel="stylesheet" />
-
 
 <script type="text/javascript">
 $(document).delegate('#simpleraw', 'click', function() {
@@ -61,7 +47,7 @@ $(document).delegate('#simpleraw', 'click', function() {
             <li><a href="tel:'986619455'">Llamando al RPC de VS</a></li>
             
             <li><a id="link">this is a link</a></li>
-            <li><a href="#" onClick="btnf()">llamame</a></li>
+            <li><a href="Forms/dialogo.html">llamame</a></li>
 		</ul>	
 	</div>
     <a href="#" id="dialoglink" data-role="button">Open Dialog</a>
