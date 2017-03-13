@@ -50,10 +50,10 @@
             <li><a href="tel:'986619455'">Llamando al RPC de VS</a></li>
             
             <li><a id="link">this is a link</a></li>
+            <li class="phone">llamame</li>
 		</ul>	
 	</div>
     <div style="padding:5px;"><button onClick="btnf()">Llamar</button></div>
-    <div data-role="content" class="phone">666-555-4444</div>
 	<div data-role="footer">
 		<h4>Pie de página</h4>
 	</div>
