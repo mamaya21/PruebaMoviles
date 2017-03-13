@@ -10,9 +10,8 @@
 
 <script type=”text/javascript”>
 	function btnf() {
-		alert("mensaje");
-		var adi=document.formu.txttelf.value;
-	window.plugins.CallNumber.callNumber(function () { }, function e() { }, adi);
+		var nume= $("#txttelf").val();
+		alert("numero: "+nume);
 	}
 </script>
 
@@ -41,7 +40,7 @@
             </label>
             </form>
         
-            <li><a href="tel:{{numero_t}}">Num..</a></li>
+            <li><a href="tel:numero_t">Num..</a></li>
             
             <li><a href="tel:'986619455'">Llamando al RPC de VS</a></li>
             
